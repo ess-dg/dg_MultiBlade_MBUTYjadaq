@@ -1,0 +1,42 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+#ignore emacs backup and lock files:
+*~
+\#*\#
+.\#*
+
+#Also needed for vi:
+.*.sw?
+
+#ignore any build output and user files:
+/install/
+/.bld/
+/.system/depfix/bld/
+
+#Extra protection against adding in build output created by custom user commands:
+*.so
+*.dylib
+*.o
+*.a
+*.pyc
+*.pyo
+*.exe
+*.gch
+*.out
+__pycache__/
+
+#latex build leftovers:
+*.aux
+*.blg
+*.bbl
+*.dvi
+#NB: The .log filter is appropriate for latex, but not for others like dgcode:
+*.log
+*.spl
+*.bak
+*.toc
+
+#Miscellaneous:
+.DS_Store
+vgcore.*
+
+
